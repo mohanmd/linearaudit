@@ -1,0 +1,89 @@
+<mat-toolbar class="header_top">
+  <mat-toolbar-row class="container">
+    <div class="logo">
+      <img src="../../../../assets/logo.png" height="50" />
+    </div>
+    <span class="flex-spacer"></span>
+    <div class="menu-items" [matMenuTriggerFor]="menu" *ngIf="isMobile">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <mat-menu #menu="matMenu"  >
+      <a mat-menu-item [routerLink]="'/accounts'">Home</a>
+      <a mat-menu-item [routerLink]="'/create-account'">Who we are</a>
+      <a mat-menu-item [routerLink]="'/contacts'">What we do </a>
+      <a mat-menu-item [routerLink]="'/create-contact'">Linear SBM</a>
+      <a mat-menu-item [routerLink]="'/activities'">Insights</a>
+      <a mat-menu-item [routerLink]="'/create-activity'">Contact</a>
+    </mat-menu>
+    <div class="menu-items" [class.mobile-menu-active]="isMobileMenuActive"  *ngIf="!isMobile"  [ngClass]="{ 'desktop-menu': !isMobile, 'mobile-menu': isMobile }">
+      <a mat-button [routerLink]="'/accounts'">Home</a>
+      <a mat-button [routerLink]="'/create-account'">Who we are</a>
+      <a mat-button >What we do <i class="fa-solid fa-angle-down"></i>
+        <div class="mega_menu">
+          <div class="mege_menu_row">
+            <div class="col_item">
+              <div class="title">Registrations</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts1'">GST Registration</a></li>
+                <li class="menu"><a [routerLink]="'/accounts2'">Trademark Registration</a></li>
+                <li class="menu"><a [routerLink]="'/accounts3'">Other Registration</a></li>
+                <li class="menu"><a [routerLink]="'/accounts4'">Service 5</a></li>
+              </ul>
+            </div>
+
+            <div class="col_item">
+              <div class="title">Audit & Assurance</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+              </ul>
+            </div>
+
+            <div class="col_item">
+              <div class="title">Taxation</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Statutory Audits</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Internal Audits</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Process/ Cost Audits</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">MIS Reporting & Audits</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Compliance Audits</a></li>
+              </ul>
+            </div>
+
+            <div class="col_item">
+              <div class="title">Compliance</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+              </ul>
+            </div>
+
+            <div class="col_item">
+              <div class="title">Business Advisory</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Income Tax</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Captial Gains</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Translate Pricing</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Morges & Acquisition</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">GST Advisory & Filings</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a mat-button [routerLink]="'/create-contact'">Linear SBM <i class="fa-solid fa-angle-down"></i></a>
+      <a mat-button [routerLink]="'/activities'">Insights <i class="fa-solid fa-angle-down"></i></a>
+      <a mat-button [routerLink]="'/create-activity'">Contact</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+

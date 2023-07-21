@@ -1,0 +1,18 @@
+<section class="what_we_do">
+  <div class="container">
+    <h1 class="section_title center">What We Do</h1>
+    <div class="row wrap" *ngIf="listBox">
+      <div class="col-4" *ngFor="let item of listBox; let i = index">
+        <div class="card no_bg">
+          <div class="card-box">
+            <div class="card-img">
+              <img [src]="'assets/' + item?.image" [alt]="item?.title" *ngIf="item?.image" width="100%">
+            </div>
+            <h3 class="card-title">{{ item.title ?? '' }}</h3>
+            <p class="content">{{ item.content ?? ''}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

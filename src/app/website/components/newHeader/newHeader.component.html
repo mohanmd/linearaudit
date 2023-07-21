@@ -1,0 +1,93 @@
+<nav>
+  <div class="wrapper">
+    <div class="logo">
+      <a href="#">
+        <img src="../../../../assets/logo.png" height="50" />
+      </a>
+    </div>
+    <input type="radio" name="slider" id="menu-btn">
+    <input type="radio" name="slider" id="close-btn">
+    <ul class="nav-links">
+      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Who we are</a></li>
+      <li>
+        <a href="#" class="desktop-item">What we do</a>
+        <input type="checkbox" id="showDrop">
+        <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+        <ul class="drop-menu">
+          <li><a href="#">Drop menu 1</a></li>
+          <li><a href="#">Drop menu 2</a></li>
+          <li><a href="#">Drop menu 3</a></li>
+          <li><a href="#">Drop menu 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="desktop-item">Linear SBM</a>
+        <input type="checkbox" id="showMega">
+        <label for="showMega" class="mobile-item">Mega Menu</label>
+        <div class="mega-box">
+          <div class="content">
+            <div class="col_item">
+              <div class="title">Registrations</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts1'">GST Registration</a></li>
+                <li class="menu"><a [routerLink]="'/accounts2'">Trademark Registration</a></li>
+                <li class="menu"><a [routerLink]="'/accounts3'">Other Registration</a></li>
+                <li class="menu"><a [routerLink]="'/accounts4'">Service 5</a></li>
+              </ul>
+            </div>
+
+            <div class="col_item">
+              <div class="title">Audit & Assurance</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+              </ul>
+            </div>
+
+            <div class="col_item">
+              <div class="title">Taxation</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Statutory Audits</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Internal Audits</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Process/ Cost Audits</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">MIS Reporting & Audits</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Compliance Audits</a></li>
+              </ul>
+            </div>
+
+            <div class="col_item">
+              <div class="title">Compliance</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Company Incorporation</a></li>
+              </ul>
+            </div>
+
+            <div class="col_item">
+              <div class="title">Business Advisory</div>
+              <ul>
+                <li class="menu"><a [routerLink]="'/accounts'">Income Tax</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Captial Gains</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Translate Pricing</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">Morges & Acquisition</a></li>
+                <li class="menu"><a [routerLink]="'/accounts'">GST Advisory & Filings</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="#">Insights</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+  </div>
+</nav>

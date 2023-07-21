@@ -1,0 +1,17 @@
+.what_we_do .card .card-img{
+    margin-bottom: 15px;
+}
+.what_we_do .card{
+    height: 100%;
+}
+.what_we_do .card .card-box{
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    transition: .6s;
+}
+.what_we_do .card .card-box:hover{
+    background-color: #FB275D;
+    transition: .6s;
+    transform: scale(1.08);
+    color: #ffffff;
+}

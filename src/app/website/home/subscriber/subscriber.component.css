@@ -1,0 +1,23 @@
+.subscribe_form {
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 15px;
+}
+.subscribe_form .btn{
+    height: 50px;
+    width: 100%;
+    max-width: 170px;
+    font-size: 20px;
+}
+
+.image-box{
+    transition: .6s;
+}
+.image-box:hover{
+    transform: scale(1.07);
+    transition: .6s;
+}

@@ -1,0 +1,123 @@
+.testimonial_card-box {
+    box-shadow: 1px 3px 7px 0 #0000001a;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.carousel .author .profile {
+    border-radius: 100px;
+    border: 2px solid;
+}
+
+.carousel .author {
+    text-align: center;
+}
+
+.carousel .author .name {
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.testimonial {
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    padding: 3rem 0;
+}
+
+.card {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.testimonial button {
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 3rem;
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.testimonial button.prev {
+    left: 2%;
+}
+
+.testimonial button.next {
+    right: 2%;
+}
+
+.testimonial button:hover {
+    opacity: .7;
+}
+
+.testimonial button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.testimonial .row .col-4 .testimonial_card-box {
+    /* transition: 1s; */
+}
+
+.testimonial .row .col-4.active .testimonial_card-box {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 111111;
+    background: #ffffff;
+    transition: 1s;
+    box-shadow: 1px 3px 7px 0 #0000005e;
+}
+
+@media screen and (max-width: 768px) {
+
+    .noactive {
+        animation: Zoom .5s ease;
+        transition: .5s;
+    }
+}
+
+@keyframes Zoom {
+    0% {
+        transform: scale(.91);
+        transition: .5s;
+    }
+
+    100% {
+        transform: scale(1.1);
+        transition: .5s;
+    }
+}

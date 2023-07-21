@@ -1,0 +1,30 @@
+<section class="testimonial">
+  <div class="container">
+    <h1 class="section_title center">Testimonial</h1>
+ 
+    <!-- testimonial-carousel.component.html -->
+    <div class="carousel">
+      <div class="row">
+        <div class="col-4" *ngFor="let testimonial of testimonialsToShow; let i = index" [class]="i==1 ? 'active' : 'noactive' ">
+          <div class="testimonial_card">
+            <div class="testimonial_card-box">
+              <p class="content">{{ testimonial.message }}</p>
+              <div class="author">
+                <img class="profile" [src]="'https://i.pravatar.cc/60?img=' + (i + 1)" alt="author">
+                <div class="name">{{ testimonial.name }}</div>
+                <div class="designation">Marketing Manager, Company</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="navigation">
+      <button class="prev" (click)="prev()" [disabled]="currentIndex === 0"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="next" (click)="next()" [disabled]="currentIndex + 3 >= testimonials.length"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+
+  </div>
+</section>

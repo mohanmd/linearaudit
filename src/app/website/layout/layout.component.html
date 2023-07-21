@@ -1,0 +1,8 @@
+<app-newHeader></app-newHeader>
+<!-- <app-header></app-header> -->
+<router-outlet></router-outlet>
+
+<button *ngIf="isShow" (click)="gotoTop()" mat-mini-fab color="accent" class="scrollTopbutton">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+<app-footer></app-footer>
