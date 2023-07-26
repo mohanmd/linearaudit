@@ -10,6 +10,7 @@ import { WhatWedoComponent } from './what-wedo/what-wedo.component';
 import { SubscriberComponent } from './subscriber/subscriber.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ContactComponent } from './contact/contact.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { ContactComponent } from './contact/contact.component';
     CommonModule,
     HomeRoutes,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,CarouselModule
   ],
   declarations: [
     HomeComponent,

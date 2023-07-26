@@ -1,7 +1,7 @@
 .intro {
-  position: relative;
-  top: 70px;
-}.intro .section_title {
+  margin-top: 70px;
+}
+.intro .section_title {
   font-weight: 600;
   overflow: hidden;
 }
@@ -12,6 +12,8 @@
   padding-right: 20px;
   font-size: 1.5rem;
   cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .intro .section_title .tcontainer {

@@ -14,7 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { MatMenuModule } from '@angular/material/menu';
     AppRoutingModule,
     LayoutModule,
     RouterModule,
-    MatMenuModule
+    MatMenuModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

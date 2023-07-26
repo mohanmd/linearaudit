@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 $primary : #5151d5;
 $secondary : #1d1d1d;
 $color_light : #ffffff;
@@ -11,16 +14,18 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: $secondary;
-    app-home{
+
+    app-home {
         position: relative;
         padding-top: 70px;
     }
 }
 
 
-:root{
-    --primary : #5151D5;
+:root {
+    --primary: #5151D5;
 }
+
 .flex-spacer {
     flex: 1 1 auto;
 }
@@ -139,7 +144,8 @@ section {
         transition: .6s;
         background: #fff;
         border-radius: 11px;
-        &:hover{
+
+        &:hover {
             transition: .6s;
             transform: scale(1.08);
         }
@@ -156,6 +162,7 @@ section {
 .btn {
     padding: 10px 15px;
     font-size: 20px;
+
     &.outline {
         border: 2px solid $secondary;
         background-color: transparent;
@@ -164,7 +171,8 @@ section {
         &.primary {
             border-color: $secondary;
             color: $secondary;
-            &:hover{
+
+            &:hover {
                 background-color: $primary;
                 color: #ffffff;
                 border-color: $primary;
@@ -232,19 +240,68 @@ ul.horizontal_list {
 }
 
 
+#testmonial_slider.carousel {
+    .owl-carousel {
+        .owl-stage-outer {
+            padding: 2rem 0;
+        }
+
+        .owl-nav {
+            background-color: antiquewhite;
+            > div {
+                cursor: pointer;
+                color: #fff;
+                border: none;
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                font-size: 3rem;
+                color: var(--primary);
+                background-color: transparent;
+                &.owl-prev{
+                    left: -5%;
+                }
+                &.owl-next{
+                    right:-5%;
+                }
+            }
+        }
+
+        // .owl-item.active:nth-of-type(2) .testimonial_card-box {
+        //     transform: scale(1.2);
+        //     position: relative;
+        //     z-index: 111111;
+        //     background: #ffffff;
+        //     transition: 1s;
+        //     box-shadow: 1px 3px 7px 0 #0000005e;
+        // }
+
+        
+
+        .testimonial button.prev {
+            left: 2%;
+        }
+
+        .testimonial button.next {
+            right: 2%;
+        }
+    }
+}
 
 .cdk-overlay-pane {
     right: 0 !important;
+
     .mat-mdc-menu-panel {
         border-radius: 0;
-        .mat-mdc-menu-content{
+
+        .mat-mdc-menu-content {
             width: 60vw;
             height: 90vh;
             border-radius: 0;
             background: $primary;
             color: #fff;
-        
-            a{
+
+            a {
                 color: #ffffff;
             }
         }

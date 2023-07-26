@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger, transition,state, animate, style } from '@angular/animations';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 
 export interface Testimonial {
@@ -66,36 +67,34 @@ export class TestimonialComponent implements OnInit {
   currentIndex: number = 0;
   testimonialsToShow: Testimonial[] = [];
 
-  ngOnInit() {
-    this.getScreenWidth = window.innerWidth;
-    this.loadTestimonials();
+  customOptions: OwlOptions = {
+    loop: true,
+    dots: false,
+    navSpeed: 700,
+    nav : true,
+    navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
+    margin : 20,
+    animateIn: 'bounceIn',
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 3
+      }
+    },
+  }
+  ngOnInit() { 
   }
 
-  loadTestimonials() {
-    console.log(this.getScreenWidth);
-    
-    if(this.getScreenWidth <= 768){
-      this.testimonialsToShow = this.testimonials.slice(this.currentIndex, this.currentIndex + 1);
-    }else{
-      this.testimonialsToShow = this.testimonials.slice(this.currentIndex, this.currentIndex + 3);
-    }
-  }
+  
 
-  next() {
-    if (this.currentIndex + 3 < this.testimonials.length) {
-      this.currentIndex += 1;
-      this.loadTestimonials();
-    }
-  }
-
-  prev() {
-    if (this.currentIndex > 0) {
-      this.currentIndex -= 1;
-      this.loadTestimonials();
-    }
-  }
-
-  constructor() { }
- 
+  constructor() { } 
 
 }

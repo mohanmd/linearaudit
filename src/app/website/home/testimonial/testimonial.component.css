@@ -7,6 +7,8 @@
 .carousel .author .profile {
     border-radius: 100px;
     border: 2px solid;
+    width: 60px;
+    margin: 0 auto;
 }
 
 .carousel .author {
@@ -20,12 +22,6 @@
 
 .testimonial {
     position: relative;
-}
-
-.carousel {
-    display: flex;
-    overflow: hidden;
-    padding: 3rem 0;
 }
 
 .card {

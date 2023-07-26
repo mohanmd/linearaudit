@@ -22,7 +22,7 @@ import { NewHeaderComponent } from '../components/newHeader/newHeader.component'
     MatIconModule,
     MatMenuModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
   ],
   declarations: [
     LayoutComponent,
